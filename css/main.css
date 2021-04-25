@@ -1,0 +1,290 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  color: black;
+  font-family: 'Gothic A1', sans-serif; }
+  body header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    width: 100%; }
+    body header h1 {
+      padding-top: 10px;
+      letter-spacing: -2px;
+      font-weight: bold;
+      font-style: italic; }
+    body header nav {
+      width: 100%; }
+      body header nav ul {
+        padding: 0%;
+        margin: 10px 20px;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly; }
+        body header nav ul li {
+          justify-self: center; }
+          body header nav ul li a {
+            text-decoration: none;
+            color: black; }
+  body main #stripe {
+    width: 100%;
+    position: relative;
+    margin-bottom: -50px; }
+    body main #stripe #drops {
+      top: 0;
+      left: 0;
+      width: 100%; }
+    body main #stripe #gLogo {
+      position: absolute;
+      top: 5vh;
+      right: 20vw; }
+      body main #stripe #gLogo img {
+        height: 120px; }
+    body main #stripe #setSummer {
+      position: absolute;
+      top: 30vh;
+      left: 20px; }
+      body main #stripe #setSummer h3 {
+        font-size: 30px; }
+  body main #productSection {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    body main #productSection #products {
+      padding-left: 20px;
+      width: 85%;
+      top: 0;
+      left: 0; }
+  body main #bottomPage #modelSection {
+    width: 100%;
+    padding: 10px;
+    height: 550px;
+    padding-bottom: 0;
+    position: relative; }
+    body main #bottomPage #modelSection #smile {
+      position: absolute;
+      z-index: 3;
+      right: 50%;
+      top: 20px;
+      height: 60px;
+      animation: smile 8s linear infinite; }
+
+@keyframes smile {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+    body main #bottomPage #modelSection #lip {
+      z-index: 3;
+      position: absolute;
+      right: 30%;
+      top: 250px;
+      height: 60px;
+      animation: lip 2s linear infinite; }
+
+@keyframes lip {
+  0% {
+    transform: rotate(-10deg); }
+  50% {
+    transform: rotate(10deg); }
+  100% {
+    transform: rotate(-10deg); } }
+    body main #bottomPage #modelSection #bolt {
+      z-index: 5;
+      position: absolute;
+      right: 70%;
+      top: 390px;
+      height: 60px;
+      animation: bolt 4s linear infinite; }
+
+@keyframes bolt {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+    body main #bottomPage #modelSection .models {
+      height: 250px;
+      width: min-content;
+      position: absolute;
+      overflow: hidden; }
+      body main #bottomPage #modelSection .models img {
+        height: 100%; }
+    body main #bottomPage #modelSection #cloudPaint {
+      z-index: 1;
+      left: 30px;
+      top: 160px; }
+    body main #bottomPage #modelSection #lipgloss {
+      right: 10px;
+      top: 45px;
+      z-index: 2;
+      height: 150px;
+      width: 200px; }
+      body main #bottomPage #modelSection #lipgloss img {
+        width: 100%;
+        object-fit: cover;
+        position: absolute; }
+    body main #bottomPage #modelSection #boybrow {
+      height: 230px;
+      right: 10px;
+      top: 350px; }
+  body main #bottomPage #productLinkDiv {
+    position: relative;
+    display: flex;
+    padding: 0 20px 20px; }
+    body main #bottomPage #productLinkDiv #productInfo {
+      width: 50%; }
+      body main #bottomPage #productLinkDiv #productInfo h4 {
+        font-weight: 700; }
+    body main #bottomPage #productLinkDiv #productLink {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%; }
+      body main #bottomPage #productLinkDiv #productLink a {
+        background-color: black;
+        border-radius: 3px;
+        padding: 20px 40px;
+        text-align: center;
+        text-decoration: none;
+        color: white; }
+
+@media screen and (min-width: 768px) {
+  body main #stripe {
+    margin-bottom: -180px; }
+    body main #stripe #gLogo img {
+      height: 180px; }
+    body main #stripe #setSummer {
+      left: 40px; }
+      body main #stripe #setSummer h3 {
+        font-size: 40px; }
+  body main #productSection {
+    height: 45vh; }
+  body main #bottomPage {
+    display: flex;
+    height: max-content;
+    width: 100%;
+    padding-bottom: 10px; }
+    body main #bottomPage #modelSection {
+      width: 150%;
+      padding-bottom: 10px; }
+      body main #bottomPage #modelSection #smile {
+        right: 45%;
+        top: 20px; }
+      body main #bottomPage #modelSection #lip {
+        right: 30%;
+        top: 260px; }
+      body main #bottomPage #modelSection #bolt {
+        right: 65%;
+        top: 445px; }
+      body main #bottomPage #modelSection .models {
+        margin-bottom: 100px; }
+      body main #bottomPage #modelSection #cloudPaint {
+        height: 300px;
+        left: 50px; }
+      body main #bottomPage #modelSection #lipgloss {
+        right: auto;
+        left: 250px;
+        height: 200px;
+        width: 300px; }
+      body main #bottomPage #modelSection #boybrow {
+        height: 300px;
+        left: 250px; }
+    body main #bottomPage #productLinkDiv {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding: 0 20px 20px;
+      height: 500px; }
+      body main #bottomPage #productLinkDiv #productInfo {
+        width: 100%; }
+      body main #bottomPage #productLinkDiv #productLink {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; } }
+
+@media screen and (min-width: 1025px) {
+  body header nav {
+    width: 70%; }
+  body main #stripe {
+    height: 360px;
+    margin-bottom: 0; }
+    body main #stripe #tablet-stripe {
+      position: absolute;
+      top: 8vh;
+      height: 250px;
+      width: 100%;
+      background-color: #f5dadf; }
+    body main #stripe #drops {
+      display: none; }
+    body main #stripe #gLogo {
+      right: 15vw; }
+    body main #stripe #setSummer {
+      position: absolute;
+      left: 55vw; }
+  body #desktopContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 460px; }
+    body #desktopContainer #productSection {
+      width: 33%;
+      justify-content: flex-end; }
+      body #desktopContainer #productSection #products {
+        padding-left: 20px;
+        width: 100%;
+        top: 0;
+        left: 0; }
+    body #desktopContainer #bottomPage {
+      width: 66%;
+      display: flex; }
+      body #desktopContainer #bottomPage #modelSection {
+        width: 75%;
+        position: relative;
+        top: -350px; }
+        body #desktopContainer #bottomPage #modelSection #smile {
+          right: 48%;
+          top: 20px;
+          height: 80px; }
+        body #desktopContainer #bottomPage #modelSection #lip {
+          right: 40%;
+          top: 360px;
+          height: 80px; }
+        body #desktopContainer #bottomPage #modelSection #bolt {
+          top: 500px;
+          height: 80px; }
+        body #desktopContainer #bottomPage #modelSection #cloudPaint {
+          left: 50px;
+          height: 350px; }
+        body #desktopContainer #bottomPage #modelSection #lipgloss {
+          top: 90%;
+          left: 280px;
+          width: 350px;
+          height: 250px; }
+        body #desktopContainer #bottomPage #modelSection #boybrow {
+          top: 20px;
+          left: 400px;
+          height: 350px; }
+      body #desktopContainer #bottomPage #productLinkDiv {
+        width: 25%;
+        padding: 0;
+        height: 400px; }
+        body #desktopContainer #bottomPage #productLinkDiv #productInfo {
+          width: 100%; }
+        body #desktopContainer #bottomPage #productLinkDiv #productLink {
+          width: max-content; } }
